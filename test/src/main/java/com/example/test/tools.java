@@ -222,6 +222,7 @@ public class tools {
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         LzoOutputStream cs = new LzoOutputStream(os, compressor);
         cs.write(srcBytes);
+        System.out.println("xxxxx");
         cs.close();
 
         return os.toByteArray();
