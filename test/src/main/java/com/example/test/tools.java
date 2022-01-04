@@ -180,7 +180,7 @@ public class tools {
         System.out.println("defjieya:" + 2000 + ",jieyatime:"+(endTime1 - startTime1) + "ms");
 
         try {
-            result = new String(uncompressed, "UTF-8");
+            result = new String(uncompressed, "utf-8");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -222,7 +222,7 @@ public class tools {
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         LzoOutputStream cs = new LzoOutputStream(os, compressor);
         cs.write(srcBytes);
-        System.out.println("xxxxxrrr");
+        System.out.println("xx43434xxxrrr");
         cs.close();
 
         return os.toByteArray();
