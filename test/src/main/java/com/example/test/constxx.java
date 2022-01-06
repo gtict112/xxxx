@@ -34,7 +34,7 @@ public class constxx {
         }
         return bos.toByteArray();
     }
-    private  static int sum = 0;
+
     public static byte[] uncompress(byte[] input,int i) throws DataFormatException, UnsupportedEncodingException {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         Inflater decompressor = new Inflater();
@@ -48,13 +48,6 @@ public class constxx {
         } finally {
             decompressor.end();
         }
-
-//        if (sum!=i)
-//        {
-//            System.out.println(sum+" "+new String(bos.toByteArray(), "UTF-8"));
-//        }
-//        sum++;
-
         return bos.toByteArray();
     }
 
