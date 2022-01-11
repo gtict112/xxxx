@@ -35,24 +35,25 @@ import javax.crypto.spec.PBEParameterSpec;
 
 public class tools {
     public static void main(String[] args) throws Exception {
-        String tmp = "appPackage=com.opos.ads" +
-                "&appSign=ea754608c75cb9ca3f4753c6de9a639f" +
-                "&appTrusted=false" +
-                "&appUUID=2118C2D93B41451F841465A61168D462" +
-                "&bizApkSize=2430939" +
-                "&bizApkStatus=400" +
-                "&bizApkVersion=1.7.2" +
-                "&bizNo=1000007" +
-                "&bizSystemApk=true" +
-                "&brand=OPPO" +
-                "&calDeviceType=phone" +
-                "&clientApkVersion=1.1.15" +
-                "&deviceType=phone" +
-                "&osVersion=9" +
-                "&otaVersion=R11_11_C.19" +
-                "&ouid=914B143CECFE494D957ECDF1CFF7024Dd7982d2da64471075f457f5e4b7b031c" +
-                "&sign=36fa0c321281c9572e0e77e287faa3c9" +
-                "&timestamp=1640915293226";
+//        String tmp = "appPackage=com.opos.ads" +
+//                "&appSign=ea754608c75cb9ca3f4753c6de9a639f" +
+//                "&appTrusted=false" +
+//                "&appUUID=2118C2D93B41451F841465A61168D462" +
+//                "&bizApkSize=2430939" +
+//                "&bizApkStatus=400" +
+//                "&bizApkVersion=1.7.2" +
+//                "&bizNo=1000007" +
+//                "&bizSystemApk=true" +
+//                "&brand=OPPO" +
+//                "&calDeviceType=phone" +
+//                "&clientApkVersion=1.1.15" +
+//                "&deviceType=phone" +
+//                "&osVersion=9" +
+//                "&otaVersion=R11_11_C.19" +
+//                "&ouid=914B143CECFE494D957ECDF1CFF7024Dd7982d2da64471075f457f5e4b7b031c" +
+//                "&sign=36fa0c321281c9572e0e77e287faa3c9" +
+//                "&timestamp=1640915293226";
+        String tmp = "appCode=sdl-client-4&branchName=null&versionName=oppomarket#_2382dev_db12345_2022110.&businessFeature=-1&commitId=db12345&apkInfoList=[{\"apkName\":\"oppomarket#_2382dev_db12345_2022110_1641796145020.apks\",\"apkUrl\":\"http://s3v2.ocs-cn-south.wanyol.com/columbus-file-repo/columbus-repo-202201/oppomarket%23_2382dev_db12345_2022110_1641796145020.apks?AWSAccessKeyId=8TPTcPsER0xGr_3Vwmb5CffcgE2lZqjpqL-IxXuD&Expires=1641909988&Signature=k8Vju5S9NP%2Bn38wjWDN%2BVC0uuCY%3D\",\"apkPackageName\":\"com.oppo.market\",\"apkHash\":\"_715220\",\"apkVersion\":\"2382009dev_dynamicl\",\"publishArea\":null}]";
         System.out.println("orglen:"+tmp.getBytes().length+"bytes"+"--"+tmp.length());
                 JsonObject father = new JsonObject();
                 father.addProperty("appPackage", "com.opos.ads");
